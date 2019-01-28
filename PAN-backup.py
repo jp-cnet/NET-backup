@@ -1,3 +1,5 @@
+#add your shebang here to run this as a script
+
 import requests
 import datetime
 
