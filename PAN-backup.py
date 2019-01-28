@@ -1,4 +1,4 @@
-#add your shebang here to run this as a script
+#!/usr/bin/env python3
 
 import requests
 import datetime
