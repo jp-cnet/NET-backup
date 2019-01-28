@@ -1,4 +1,5 @@
 import requests
+import datetime
 
 #Firewall IP address
 fwip = "10.10.10.10"         
@@ -10,7 +11,7 @@ key = "YOUR API KEY GOES HERE"
 uri = "https://"+fwip+"/api/?type=export&category=configuration&key="+key
 
 #filename to write
-myfile = "jpbackup.xml"
+myfile = datetime.datetime.now().strftime("%y-%m-%d-%H-%M")+"-jpbackup.xml"
 
 #output to verify requested resource
 print("Requesting the following resource:")
